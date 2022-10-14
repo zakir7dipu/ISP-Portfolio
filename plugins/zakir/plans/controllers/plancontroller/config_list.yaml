@@ -1,0 +1,12 @@
+list: $/zakir/plans/models/plan/plan_columns.yaml
+modelClass: Zakir\Plans\Models\Plan
+title: PlanController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'zakir/plans/plancontroller/update/:id'

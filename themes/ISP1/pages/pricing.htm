@@ -1,0 +1,43 @@
+title = "Pricing"
+url = "/pricing"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use Backend\Models\BrandSetting;
+use Zakir\Service\Models\Service;
+use Zakir\Plans\Models\Plan;
+
+function onStart(){
+    $this['page_title'] = $this->page->title;
+    $this['app_name'] = BrandSetting::get('app_name');
+    $this['active_url'] = $this->page->url;
+    $this['services'] = Service::all();
+    $this['plans'] = Plan::all();
+}
+?>
+==
+
+        <!-- Start Page Title Area -->
+        {% partial 'pagetitle' %}
+        <!-- End Page Title Area -->
+
+        <!-- Start Pricing Area -->
+        <section class="pricing-area ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <span>
+                        <span class="icon">
+                            <i class="flaticon-resume"></i>
+                        </span>
+                        
+                        <span>{{app_name}} Pricing</span>
+                    </span>
+                    <h2>Discover our best plans</h2>
+                    {# <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices.</p> #}
+                </div>
+
+                {% partial 'pricing' %}
+            </div>
+        </section>
+        <!-- End Pricing Area -->

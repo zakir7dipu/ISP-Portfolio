@@ -1,0 +1,10 @@
+plugin:
+    name: 'zakir.contact::lang.plugin.name'
+    description: 'zakir.contact::lang.plugin.description'
+    author: Zakir
+    icon: wn-icon-list
+    replaces: {  }
+permissions:
+    contact_access:
+        tab: Contact
+        label: Contact

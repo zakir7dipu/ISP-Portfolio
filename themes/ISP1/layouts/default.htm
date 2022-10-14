@@ -1,0 +1,88 @@
+description = "Default layout"
+==
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|theme }}">
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="{{ 'assets/css/animate.min.css'|theme }}">
+    <!-- FontAwesome Min CSS -->
+    <link rel="stylesheet" href="{{ 'assets/css/fontawesome.min.css'|theme }}">
+    <!-- Magnific Popup Min CSS -->
+    <link rel="stylesheet" href="{{ 'assets/css/magnific-popup.min.css'|theme }}">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="{{ 'assets/css/flaticon.css'|theme }}">
+    <!-- Nice Select Min CSS -->
+    <link rel="stylesheet" href="{{ 'assets/css/nice-select.min.css'|theme }}">
+    <!-- MeanMenu CSS -->
+    <link rel="stylesheet" href="{{ 'assets/css/meanmenu.css'|theme }}">
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="{{ 'assets/css/owl.carousel.min.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/owl.theme.default.min.css'|theme }}">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{{ 'assets/css/responsive.css'|theme }}">
+    <!-- Dark Style CSS -->
+    <link rel="stylesheet" href="{{ 'assets/css/dark-style.css'|theme }}">
+
+    <title>{{ this.theme.site_name }} | {{ this.page.title }}</title>
+
+    <link rel="icon" type="image/png" href="{{ 'assets/img/isp-favicon.png'|theme }}">
+</head>
+
+    <body>
+
+        <!-- Start Preloader Area -->
+        <div class="preloader">
+            <div class="spinner"></div>
+        </div>
+        <!-- End Preloader Area -->
+
+        <!-- Start Header Area -->
+        {% partial 'header' %}
+        <!-- End Header Area -->
+
+        {% page %}
+
+        <!-- Start Footer Area -->
+        {% partial 'footer' %}
+        <!-- End Footer Area -->
+
+        <div class="go-top"><i class="fas fa-arrow-up"></i></div>
+
+        <!-- jQuery Min JS -->
+        <script src="{{ 'assets/js/jquery.min.js'|theme }}"></script>
+        <!-- Bootstrap Min JS -->
+        <script src="{{ 'assets/js/bootstrap.bundle.min.js'|theme }}"></script>
+        <!-- MeanMenu JS -->
+        <script src="{{ 'assets/js/jquery.meanmenu.js'|theme }}"></script>
+        <!-- Magnific Popup Min JS -->
+        <script src="{{ 'assets/js/jquery.magnific-popup.min.js'|theme }}"></script>
+        <!-- Owl Carousel Min JS -->
+        <script src="{{ 'assets/js/owl.carousel.min.js'|theme }}"></script>
+        <!-- Parallax Min JS -->
+        <script src="{{ 'assets/js/parallax.min.js'|theme }}"></script>
+        <!-- Nice Select Min JS -->
+        <script src="{{ 'assets/js/jquery.nice-select.min.js'|theme }}"></script>
+        <!-- WOW Min JS -->
+        <script src="{{ 'assets/js/wow.min.js'|theme }}"></script>
+        <!-- AjaxChimp Min JS -->
+        <script src="{{ 'assets/js/jquery.ajaxchimp.min.js'|theme }}"></script>
+        <!-- Form Validator Min JS -->
+        <script src="{{ 'assets/js/form-validator.min.js'|theme }}"></script>
+        <!-- Contact Form Min JS -->
+        <script src="{{ 'assets/js/contact-form-script.js'|theme }}"></script>
+        <!-- Main JS -->
+        <script src="{{ 'assets/js/main.js'|theme }}"></script>
+        
+        {% framework extras %}
+        {% scripts %}
+    </body>
+</html>

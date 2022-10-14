@@ -1,0 +1,11 @@
+columns:
+    name:
+        label: 'Service Name'
+        type: text
+        searchable: true
+    about:
+        label: 'About Service'
+        type: text
+    icon:
+        label: Icon
+        type: image

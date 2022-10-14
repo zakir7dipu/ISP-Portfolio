@@ -1,0 +1,12 @@
+fields:
+    question:
+        label: Question
+        span: full
+        required: 1
+        type: text
+    answer:
+        label: Answer
+        span: full
+        size: ''
+        required: 1
+        type: textarea

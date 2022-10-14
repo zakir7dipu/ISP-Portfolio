@@ -1,0 +1,41 @@
+<section class="features-area bg-image ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <span>
+                        <span class="icon">
+                            <i class="flaticon-wifi"></i>
+                        </span>
+                        
+                        <span>{{app_name}} Features</span>
+                    </span>
+                    <h2>We are internet service provider company in {{app_location}}</h2>
+                </div>
+
+                <div class="row">
+                    {% for feature in features %}
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-features-box">
+                            <div class="icon">
+                                <img src="{{ feature.icon.path }}"/>
+                            </div>
+
+                            <h3>{{ feature.name }}</h3>
+
+                            <p>{{ feature.about }}</p>
+
+                            <div class="back-icon">
+                                <i class="flaticon-speedometer"></i>
+                            </div>
+
+                            <a href="/feature/{{ feature.slug }}" class="details-btn"><i class="flaticon-arrow-pointing-to-right"></i></a>
+
+                            <div class="image-box">
+                                <img src="{{ 'assets/img/shape-image/2.png'|theme }}" alt="image">
+                                <img src="{{ 'assets/img/shape-image/2.png'|theme }}" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>

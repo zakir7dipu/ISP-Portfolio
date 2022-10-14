@@ -1,0 +1,10 @@
+name: PlanController
+form: $/zakir/plans/models/plan/plane_fields.yaml
+modelClass: Zakir\Plans\Models\Plan
+defaultRedirect: zakir/plans/plancontroller
+create:
+    redirect: 'zakir/plans/plancontroller/update/:id'
+    redirectClose: zakir/plans/plancontroller
+update:
+    redirect: zakir/plans/plancontroller
+    redirectClose: zakir/plans/plancontroller

@@ -1,0 +1,12 @@
+title: ContactController
+modelClass: Zakir\Contact\Models\Contact
+list: $/zakir/contact/models/contact/message_columns.yaml
+recordUrl: zakir/contact/contactcontroller
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: '10'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

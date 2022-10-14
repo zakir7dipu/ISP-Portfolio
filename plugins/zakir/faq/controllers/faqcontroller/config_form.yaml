@@ -1,0 +1,10 @@
+name: FaqController
+form: $/zakir/faq/models/faq/faq_fields.yaml
+modelClass: Zakir\Faq\Models\Faq
+defaultRedirect: zakir/faq/faqcontroller
+create:
+    redirect: 'zakir/faq/faqcontroller/update/:id'
+    redirectClose: zakir/faq/faqcontroller
+update:
+    redirect: zakir/faq/faqcontroller
+    redirectClose: zakir/faq/faqcontroller

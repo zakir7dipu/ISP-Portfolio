@@ -1,0 +1,15 @@
+plugin:
+    name: 'zakir.feature::lang.plugin.name'
+    description: 'zakir.feature::lang.plugin.description'
+    author: Zakir
+    icon: wn-icon-arrows-alt
+    replaces: {  }
+permissions:
+    feature_access:
+        tab: Feature
+        label: Feature
+navigation:
+    main-menu-item:
+        label: Feature
+        url: zakir/feature/featurecontroller
+        icon: icon-arrows-alt

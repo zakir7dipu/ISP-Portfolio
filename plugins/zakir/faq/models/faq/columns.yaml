@@ -1,0 +1,8 @@
+columns:
+    question:
+        label: Question
+        type: text
+        searchable: true
+    answer:
+        label: Answer
+        type: text

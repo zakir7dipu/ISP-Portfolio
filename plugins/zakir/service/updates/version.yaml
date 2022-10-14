@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table zakir_service_item'
+    - builder_table_create_zakir_service_item.php
+1.0.3:
+    - 'Updated table zakir_service_item'
+    - builder_table_update_zakir_service_item.php
+1.0.4:
+    - 'Updated table zakir_service_item'
+    - builder_table_update_zakir_service_item_2.php

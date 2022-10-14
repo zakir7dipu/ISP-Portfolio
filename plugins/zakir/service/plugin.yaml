@@ -1,0 +1,17 @@
+plugin:
+    name: 'zakir.service::lang.plugin.name'
+    description: 'zakir.service::lang.plugin.description'
+    author: Zakir
+    icon: wn-icon-tasks
+    replaces: {  }
+permissions:
+    service_access:
+        tab: Service
+        label: Service
+navigation:
+    service_access:
+        label: Service
+        url: zakir/service/servicecontroller
+        icon: icon-tasks
+        permissions:
+            - service_access

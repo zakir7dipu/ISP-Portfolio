@@ -1,0 +1,15 @@
+plugin:
+    name: 'zakir.faq::lang.plugin.name'
+    description: 'zakir.faq::lang.plugin.description'
+    author: Zakir
+    icon: wn-icon-flash
+    replaces: {  }
+permissions:
+    faq_access:
+        tab: Faq
+        label: Faq
+navigation:
+    main-menu-item:
+        label: FAQ
+        url: zakir/faq/faqcontroller
+        icon: icon-flash

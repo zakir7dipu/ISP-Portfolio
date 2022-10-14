@@ -1,0 +1,70 @@
+[viewBag]
+==
+<footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <div class="logo">
+                                <a href="#"><img src="{{ this.theme.logo|media }}" alt="image"></a>
+                                <p>{{ this.theme.about_in_short }}</p>
+                            </div>
+
+                            <form class="newsletter-form" data-toggle="validator">
+                                <input type="email" class="newsletter-input" placeholder="Your Email Address" name="EMAIL" required autocomplete="off">
+                                <button type="submit"><i class="flaticon-paper-plane"></i></button>
+                                <div id="validator-newsletter" class="form-result"></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h3>Customer Services</h3>
+
+                            <ul class="services-widget-list">
+                            {% for item in services %}
+                                <li><a href="javascript:void(0)">{{ item.name }}</a></li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h3>Useful Links</h3>
+
+                            <ul class="links-widget-list">
+                                <li><a href="/about-us">About Us</a></li>
+                                <li><a href="/pricing">Pricing</a></li>
+                                <li><a href="/contact">Contacts</a></li>
+                                <li><a href="/terms-condition">Terms & Condition</a></li>
+                                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h3>Get In Touch</h3>
+
+                            <div class="widget-contact-info">
+                                <p>
+                                    <a href="tel:{{ this.theme.contact_number1 }}">{{ this.theme.contact_number1 }}</a>
+                                    <span>(Customer service and support)</span>
+                                    <a href="tel:{{ this.theme.contact_number2 }}">{{ this.theme.contact_number2 }}</a>
+                                    <span>(For new customers)</span>
+                                    {{ this.theme.address }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright-area">
+                <div class="container">
+                    <p>© <script>document.write(new Date().getFullYear())</script> Developed by by <a href="https://zakir7dipu.com/" target="_blank">DAC</a></p>
+                </div>
+            </div>
+        </footer>

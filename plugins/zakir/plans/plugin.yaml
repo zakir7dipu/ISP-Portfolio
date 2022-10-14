@@ -1,0 +1,15 @@
+plugin:
+    name: 'zakir.plans::lang.plugin.name'
+    description: 'zakir.plans::lang.plugin.description'
+    author: Zakir
+    icon: wn-icon-archive
+    replaces: {  }
+permissions:
+    plan_access:
+        tab: Plan
+        label: Plan
+navigation:
+    main-menu-item:
+        label: 'Package / Plan'
+        url: zakir/plans/plancontroller
+        icon: icon-archive

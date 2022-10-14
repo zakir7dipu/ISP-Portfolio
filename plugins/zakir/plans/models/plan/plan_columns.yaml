@@ -1,0 +1,20 @@
+columns:
+    name:
+        label: Name
+        type: text
+        searchable: true
+    type:
+        label: Type
+        type: text
+        searchable: true
+    behavior:
+        label: Behavior
+        type: text
+        searchable: true
+    price:
+        label: Price
+        type: number
+        searchable: true
+    is_offer:
+        label: 'Has Offer'
+        type: switch

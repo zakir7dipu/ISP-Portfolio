@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table zakir_contact_messages'
+    - builder_table_create_zakir_contact_.php
+1.0.3:
+    - 'Created table zakir_contact_messagess'
+    - builder_table_create_zakir_contact_messagess.php
+1.0.4:
+    - 'Drop table zakir_contact_messages'
+    - builder_table_delete_zakir_contact_messages.php
+1.0.5:
+    - 'Updated table zakir_contact_messagess'
+    - builder_table_update_zakir_contact_messages.php

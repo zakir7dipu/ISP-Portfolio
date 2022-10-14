@@ -1,0 +1,72 @@
+        
+                <div class="row">
+                    {% for plan in plans %}
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-pricing-table">
+                            <div class="pricing-header">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-house-signal"></i>
+                                </div>
+
+                                <span>{{ plan.name }}</span>
+                                <h3>{{ plan.type }}</h3>
+                                <span>{{ plan.behavior }}</span>
+                            </div>
+
+                            <ul class="pricing-features-list">
+                                {% if plan.feature1 %}
+                                <li><i class="flaticon-check-mark"></i> {{plan.feature1}}</li>
+                                {% endif %}
+                                {% if plan.feature2 %}
+                                <li><i class="flaticon-check-mark"></i> {{plan.feature2}}</li>
+                                {% endif %}
+                                {% if plan.feature3 %}
+                                <li><i class="flaticon-check-mark"></i> {{plan.feature3}}</li>
+                                {% endif %}
+                                {% if plan.feature4 %}
+                                <li><i class="flaticon-check-mark"></i> {{plan.feature4}}</li>
+                                {% endif %}
+                                {% if plan.feature5 %}
+                                <li><i class="flaticon-check-mark"></i> {{plan.feature5}}</li>
+                                {% endif %}
+                                {% if plan.feature6 %}
+                                <li><i class="flaticon-check-mark"></i> {{plan.feature6}}</li>
+                                {% endif %}
+                                {% if plan.feature7 %}
+                                <li><i class="flaticon-check-mark"></i> {{plan.feature7}}</li>
+                                {% endif %}
+                                {% if plan.feature8 %}
+                                <li><i class="flaticon-check-mark"></i> {{plan.feature8}}</li>
+                                {% endif %}
+                                {% if plan.feature9 %}
+                                <li><i class="flaticon-check-mark"></i> {{plan.feature9}}</li>
+                                {% endif %}
+                                {% if plan.feature10 %}
+                                <li><i class="flaticon-check-mark"></i> {{plan.feature10}}</li>
+                                {% endif %}
+                            </ul>
+
+                            <div class="price">
+                                {% if plan.is_offer %}
+                                <span>Offer Price</span>
+                                <span>৳</span>
+                                {{ plan.offer_price }}
+                                <span>/1 month</span>
+                                {% else %}
+                                <span>From</span>
+                                <span>৳</span>
+                                {{ plan.price }}
+                                <span>/mo</span>
+                                {% endif %}
+                            </div>
+
+                            <a href="#" class="view-plans-btn">View Plans</a>
+
+                            <div class="image-box">
+                                <img src="{{ 'assets/img/shape-image/2.png'|theme }}" alt="image">
+                                <img src="{{ 'assets/img/shape-image/2.png'|theme }}" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>

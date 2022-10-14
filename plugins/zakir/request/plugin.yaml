@@ -1,0 +1,24 @@
+plugin:
+    name: 'zakir.request::lang.plugin.name'
+    description: 'zakir.request::lang.plugin.description'
+    author: Zakir
+    icon: wn-icon-angellist
+    replaces: {  }
+permissions:
+    request_access:
+        tab: Request
+        label: Request
+navigation:
+    main-menu-item:
+        label: 'Request Plane'
+        url: zakir/request/requestcontroller
+        icon: icon-angellist
+        sideMenu:
+            side-menu-item2:
+                label: 'Request Plane'
+                url: zakir/request/requestcontroller
+                icon: icon-angellist
+            side-menu-item:
+                label: 'Contact Messages'
+                url: zakir/contact/contactcontroller
+                icon: icon-list

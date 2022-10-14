@@ -1,0 +1,16 @@
+title = "Terms & Condition"
+url = "/terms-condition"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use Zakir\Service\Models\Service;
+function onStart(){
+    $this['page_title'] = $this->page->title;
+    $this['services'] = Service::all();
+}
+?>
+==
+<!-- Start Page Title Area -->
+        {% partial 'pagetitle' %}
+        <!-- End Page Title Area -->

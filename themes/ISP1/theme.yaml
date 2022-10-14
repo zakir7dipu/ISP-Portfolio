@@ -1,0 +1,56 @@
+name: ISP
+description: 'ISP is a winter CMS theme, only for ISP business. It is a portfolio theme'
+author: zakir7dipu
+homepage: 'http://zakir7dipu.com'
+code: ''
+
+form:
+  fields:
+    site_name:
+      label: Site name
+      default: ISP Theme
+    logo:
+      label: Logo
+      type: mediafinder
+      mode: image
+      imageWidth: 140
+      imageHeight: 50
+    contact_number1:
+      label: Customer services 1
+      type: text
+    contact_number2:
+      label: Customer services 2
+      type: text
+    address:
+      label: Office address
+      type: text
+    about_in_short:
+      label: About in short
+      type: text
+    contact_email1:
+      label: Customer services email 1
+      type: email
+    contact_email2:
+      label: Customer services email 2
+      type: email
+    whatsapp:
+      label: Whatsapp
+      type: text
+    about_section_title:
+      label: Home page about section title
+      type: text
+    about_section_brif:
+      label: Home page about section brif
+      type: text
+    about_section_image:
+      label: Home page about section image
+      type: mediafinder
+      mode: image
+      imageWidth: 575
+      imageHeight: 415
+    marquee_text:
+      label: Home page slider text
+      type: text
+    youtube_video:
+      label: Home page Video (just Youtube videos ID like  '4YJpTXIPB9o')
+      type: text

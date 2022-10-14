@@ -1,0 +1,10 @@
+name: FeatureController
+form: $/zakir/feature/models/feature/feature_fields.yaml
+modelClass: Zakir\Feature\Models\Feature
+defaultRedirect: zakir/feature/featurecontroller
+create:
+    redirect: 'zakir/feature/featurecontroller/update/:id'
+    redirectClose: zakir/feature/featurecontroller
+update:
+    redirect: zakir/feature/featurecontroller
+    redirectClose: zakir/feature/featurecontroller

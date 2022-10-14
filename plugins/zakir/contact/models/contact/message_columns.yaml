@@ -1,0 +1,20 @@
+columns:
+    name:
+        label: 'Customer name'
+        type: text
+        searchable: true
+    email:
+        label: Email
+        type: text
+        searchable: true
+    phone_number:
+        label: Phone
+        type: text
+        searchable: true
+    msg_subject:
+        label: Subject
+        type: text
+        searchable: true
+    content:
+        label: Message
+        type: text

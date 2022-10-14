@@ -1,0 +1,92 @@
+                <div class="row">
+                    {% if services|length %}
+                        {% for service in services %}
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-services-box">
+                                    <div class="icon">
+                                        {# <i class="flaticon-router"></i> #}
+                                        <img src="{{ service.icon.path }}" />
+                                    </div>
+
+                                    <h3>{{ service.name }}</h3>
+
+                                    <p>{{ service.about }}</p>
+
+                                    <a href="/service/{{ service.slug }}" class="details-btn"><i class="flaticon-arrow-pointing-to-right"></i></a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <h4 class="text-center">No Service Found</h4>
+                    {% endif %}
+
+                    {# <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-services-box">
+                            <div class="icon">
+                                <i class="flaticon-wifi-1"></i>
+                            </div>
+
+                            <h3>Home WIFI</h3>
+
+                            <p>Lorem ipsudolorsitamet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+
+                            <a href="#" class="read-more-btn">Read More <i class="flaticon-arrow-pointing-to-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-services-box">
+                            <div class="icon">
+                                <i class="flaticon-wifi-signal-tower"></i>
+                            </div>
+
+                            <h3>Satellite TV</h3>
+
+                            <p>Lorem ipsudolorsitamet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+
+                            <a href="#" class="read-more-btn">Read More <i class="flaticon-arrow-pointing-to-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-services-box">
+                            <div class="icon">
+                                <i class="flaticon-online-shop"></i>
+                            </div>
+
+                            <h3>Settop Box</h3>
+
+                            <p>Lorem ipsudolorsitamet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+
+                            <a href="#" class="read-more-btn">Read More <i class="flaticon-arrow-pointing-to-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-services-box">
+                            <div class="icon">
+                                <i class="flaticon-key"></i>
+                            </div>
+
+                            <h3>Mobile Connection</h3>
+
+                            <p>Lorem ipsudolorsitamet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+
+                            <a href="#" class="read-more-btn">Read More <i class="flaticon-arrow-pointing-to-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-services-box">
+                            <div class="icon">
+                                <i class="flaticon-shield"></i>
+                            </div>
+
+                            <h3>Home Security</h3>
+
+                            <p>Lorem ipsudolorsitamet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+
+                            <a href="#" class="read-more-btn">Read More <i class="flaticon-arrow-pointing-to-right"></i></a>
+                        </div>
+                    </div> #}
+                </div>

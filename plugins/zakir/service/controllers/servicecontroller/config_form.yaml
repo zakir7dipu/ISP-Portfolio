@@ -1,0 +1,10 @@
+name: ServiceController
+form: $/zakir/service/models/service/service_form.yaml
+modelClass: Zakir\Service\Models\Service
+defaultRedirect: zakir/service/servicecontroller
+create:
+    redirect: 'zakir/service/servicecontroller/update/:id'
+    redirectClose: zakir/service/servicecontroller
+update:
+    redirect: zakir/service/servicecontroller
+    redirectClose: zakir/service/servicecontroller

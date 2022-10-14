@@ -1,0 +1,17 @@
+columns:
+    package:
+        label: 'Request Package'
+        type: text
+        searchable: true
+    cus_name:
+        label: Name
+        type: text
+        searchable: true
+    cus_phone:
+        label: Phone
+        type: text
+        searchable: true
+    address:
+        label: Address
+        type: text
+        searchable: true

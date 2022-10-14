@@ -1,0 +1,76 @@
+title = "Service Single"
+url = "/service/:slug"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use Backend\Models\BrandSetting;
+use Zakir\Service\Models\Service;
+
+function onStart(){
+    $this['page_title'] = $this->page->title;
+    $this['app_name'] = BrandSetting::get('app_name');
+    $this['active_url'] = $this->page->url;
+    $this['services'] = Service::whereNotIn('slug',[$this->param('slug')])->get();
+    $this['service'] = Service::where('slug',$this->param('slug'))->first();
+}
+?>
+==
+<!-- Start Page Title Area -->
+        <div class="page-title-area">
+            <div class="container">
+                <div class="page-title-content">
+                    <h2>{{ service.name }}</h2>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/service">Services</a></li>
+                        <li>{{ service.name }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+
+        <!-- Start Services Details Area -->
+        <section class="services-details-area ptb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="services-details">
+                            <img src="{{ service.service_image.path }}" alt="image">
+
+                            <div class="services-details-desc" id="serviceDetails" data-src="{{service.details}}">
+                                <script>
+                                    document.getElementById('serviceDetails').innerHTML = document.getElementById('serviceDetails').getAttribute('data-src')
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="services-sidebar">
+                            <div class="services-list">
+                                <ul>
+                                    {% for item in services %}
+                                    <li>
+                                        <a href="/service/{{ item.slug }}">
+                                            {{ item.name }} 
+                                            <i class="flaticon-arrow-pointing-to-right"></i>
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+
+                            {# <div class="services-download-list">
+                                <ul>
+                                    <li><a href="#"><i class="flaticon-pdf"></i> Download Pdf File</a></li>
+                                    <li><a href="#"><i class="flaticon-txt"></i> Download Txt File</a></li>
+                                </ul>
+                            </div> #}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services Details Area -->

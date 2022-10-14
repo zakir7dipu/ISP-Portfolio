@@ -1,0 +1,39 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        required: 1
+        type: text
+    icon:
+        label: Icon
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    about:
+        label: 'Feature in short'
+        span: full
+        required: 1
+        type: text
+    details:
+        label: 'Feature details'
+        size: ''
+        span: full
+        type: richeditor
+    feature_image:
+        label: 'Feature Image'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    slug:
+        label: Slug
+        span: auto
+        required: 1
+        type: text

@@ -1,0 +1,40 @@
+title = "Service"
+url = "/service"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use Backend\Models\BrandSetting;
+use Zakir\Service\Models\Service;
+
+function onStart(){
+    $this['page_title'] = $this->page->title;
+    $this['app_name'] = BrandSetting::get('app_name');
+    $this['active_url'] = $this->page->url;
+    $this['services'] = Service::all();
+}
+?>
+==
+
+        <!-- Start Page Title Area -->
+        {% partial 'pagetitle' %}
+        <!-- End Page Title Area -->
+
+        <!-- Start Services Area -->
+        <section class="services-area ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <span>
+                        <span class="icon">
+                            <i class="flaticon-technical-support"></i>
+                        </span>
+                        
+                        <span>{{app_name}} Services</span>
+                    </span>
+                    <h2>Explore the next Isp unlimited possibilities</h2>
+                </div>
+
+                {% partial 'services' %}
+            </div>
+        </section>
+        <!-- End Services Area -->

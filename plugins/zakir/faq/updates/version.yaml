@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table zakir_faq_items'
+    - builder_table_create_zakir_faq_items.php
