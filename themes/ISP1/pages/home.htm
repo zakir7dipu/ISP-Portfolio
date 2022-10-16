@@ -2,6 +2,8 @@ title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
+
+[requestform]
 ==
 <?php
 use Backend\Models\BrandSetting;
@@ -21,8 +23,7 @@ function onStart() {
 }
 ?>
 ==
-        
-        <!-- Start Main Banner Area -->
+<!-- Start Main Banner Area -->
         {% partial 'mainbanner' %}
         <!-- End Main Banner Area -->
 
@@ -85,6 +86,12 @@ function onStart() {
                         <span>{{app_name}} Pricing</span>
                     </span>
                     <h2>Discover our best plans</h2>
+                    {% flash success %}
+                        <p class="text-success h4">{{ message }}</p>
+                    {% endflash %}
+                    {% flash error %}
+                        <p class="text-danger h4">{{ message }}</p>
+                    {% endflash %}
                 </div>
 
                 {% partial 'pricing' %}
@@ -181,3 +188,21 @@ function onStart() {
             </div>
         </section>
         <!-- End CTA Area -->
+                <div class="modal fade" id="planModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Make a request</h5>
+                            <button type="button" class="close modalClose" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            {% component 'requestform' %}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary modalClose" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>

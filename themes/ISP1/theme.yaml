@@ -15,6 +15,12 @@ form:
       mode: image
       imageWidth: 140
       imageHeight: 50
+    icon:
+      label: Icon
+      type: mediafinder
+      mode: image
+      imageWidth: 32
+      imageHeight: 32
     contact_number1:
       label: Customer services 1
       type: text
@@ -52,5 +58,8 @@ form:
       label: Home page slider text
       type: text
     youtube_video:
-      label: Home page Video (just Youtube videos ID like  '4YJpTXIPB9o')
+      label: 'Home page Video (just Youtube videos ID like  ''4YJpTXIPB9o'')'
+      type: text
+    google_map:
+      label: 'Google map location'
       type: text

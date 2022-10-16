@@ -34,7 +34,7 @@ description = "Default layout"
 
     <title>{{ this.theme.site_name }} | {{ this.page.title }}</title>
 
-    <link rel="icon" type="image/png" href="{{ 'assets/img/isp-favicon.png'|theme }}">
+    <link rel="icon" type="image/png" href="{{ this.theme.icon }}">
 </head>
 
     <body>
@@ -81,6 +81,7 @@ description = "Default layout"
         <script src="{{ 'assets/js/contact-form-script.js'|theme }}"></script>
         <!-- Main JS -->
         <script src="{{ 'assets/js/main.js'|theme }}"></script>
+        <script src="{{ 'assets/js/request-form.js'|theme }}"></script>
         
         {% framework extras %}
         {% scripts %}

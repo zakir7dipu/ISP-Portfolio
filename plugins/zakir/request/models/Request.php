@@ -18,6 +18,7 @@ class Request extends Model
      * @var string The database table used by the model.
      */
     public $table = 'zakir_request_items';
+    protected $fillable = ['package', 'cus_name', 'cus_phone', 'address'];
 
     /**
      * @var array Validation rules

@@ -1,5 +1,6 @@
-        
-                <div class="row">
+[viewBag]
+==
+<div class="row">
                     {% for plan in plans %}
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-pricing-table">
@@ -8,8 +9,8 @@
                                     <i class="fa-sharp fa-solid fa-house-signal"></i>
                                 </div>
 
-                                <span>{{ plan.name }}</span>
-                                <h3>{{ plan.type }}</h3>
+                                <span class="planName">{{ plan.name }}</span>
+                                <h3 class="planType">{{ plan.type }}</h3>
                                 <span>{{ plan.behavior }}</span>
                             </div>
 
@@ -50,17 +51,17 @@
                                 {% if plan.is_offer %}
                                 <span>Offer Price</span>
                                 <span>৳</span>
-                                {{ plan.offer_price }}
+                                <strong class="planPrice">{{ plan.offer_price }}</strong>
                                 <span>/1 month</span>
                                 {% else %}
                                 <span>From</span>
                                 <span>৳</span>
-                                {{ plan.price }}
+                                <strong class="planPrice">{{ plan.price }}</strong>
                                 <span>/mo</span>
                                 {% endif %}
                             </div>
 
-                            <a href="#" class="view-plans-btn">View Plans</a>
+                            <a href="javascript:void(0)" class="view-plans-btn getPlanBtn">Get Plans</a>
 
                             <div class="image-box">
                                 <img src="{{ 'assets/img/shape-image/2.png'|theme }}" alt="image">
